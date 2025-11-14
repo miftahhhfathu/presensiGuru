@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Jadwal extends Model
 {
-    protected $table = 'jadwal'; // WAJIB ✅
+    protected $table = 'jadwal';
 
     protected $fillable = [
         'hari',

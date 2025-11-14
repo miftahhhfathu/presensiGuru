@@ -1,22 +1,20 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Jadwal;
-use App\Models\Guru;
-use App\Models\Mapel;
-use App\Models\Kelas;
+
 use Illuminate\Http\Request;
+use App\Models\Jadwal;
 
 class AbsensiController extends Controller
 {
     public function index(Request $request)
     {
-        $hariDipilih = $request->hari ?? 'Senin';
+        $hari = $request->hari ?? 'Senin';
 
         $jadwal = Jadwal::with(['guru', 'mapel', 'kelas'])
-            ->where('hari', $hariDipilih)
-            ->get();
+                    ->where('hari', $hari)
+                    ->get();
 
-        return view('absensi.index', compact('jadwal', 'hariDipilih'));
+        return view('absensi.index', compact('jadwal', 'hari'));
     }
 }

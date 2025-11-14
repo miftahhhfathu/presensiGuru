@@ -13,9 +13,7 @@
 
     <div class="max-w-6xl mx-auto py-10">
 
-        <div class="flex justify-center mb-6">
-            <img src="/images/logo.png" class="w-24">
-        </div>
+        <div class="flex justify-center mb-6"></div>
 
         <div class="bg-white shadow-xl rounded-xl p-8">
             <div class="mb-6">
@@ -34,10 +32,7 @@
                 </form>
             </div>
 
-            <!-- 2 KOLOM -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-                <!-- JAM AWAL -->
                 <div>
                     <h2 class="text-lg font-semibold mb-2 text-gray-700">Absensi Jam Awal</h2>
 
@@ -72,7 +67,6 @@
                     </table>
                 </div>
 
-                <!-- JAM AKHIR -->
                 <div>
                     <h2 class="text-lg font-semibold mb-2 text-gray-700">Absensi Jam Akhir</h2>
 
@@ -106,7 +100,6 @@
                         </tbody>
                     </table>
                 </div>
-
             </div>
         </div>
     </div>
@@ -126,6 +119,5 @@
             });
         }
     </script>
-
 </body>
 </html>
